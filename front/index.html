@@ -3,10 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Página de Películas</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   </head>
   <body>
-    <h1>Proyecto de M2</h1>
+    <header class="header">
+      <nav class="navigation">
+        <div class="logo">
+          <a href="index.html" class="Nom-Pagina"><i class="fas fa-film"></i>MundoPelis</a>
+        </div>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="categorias.html">Categorías</a></li>
+          <li><a href="proximos-estrenos.html">Próximos estrenos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="featured-movies">
+        <div class="slider">
+            <div class="slide">
+                <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/CBDZU2OL6FHDBKHUE3FMK6B7SM.jpeg" alt="Película destacada 1">
+                <div class="slide-info">
+                    <h3>El reino del planeta de los simios</h3>
+                    <p>Pelicula ficticia de la dominacion de los simios sobre el mundo.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://cdn-0001.qstv.on.epicgames.com/SPjiHcrLVJfViCGyHy/image/landscape_comp.jpeg" alt="Película destacada 2">
+                <div class="slide-info">
+                    <h3>La sociedad de la nieve</h3>
+                    <p>Una película que cuenta la historia detras del accidente de los andes del equipo de rugby uruguayo.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/02/new-deadpool-3-poster-from-marvel-studios-accused-of-using-ai.jpg" alt="Película destacada 3">
+                <div class="slide-info">
+                    <h3>Deadpool 3</h3>
+                    <p>Pelicula de comedia de super heroes.</p>
+                </div>
+            </div>
+            <div class="slide">
+              <img src="https://m.media-amazon.com/images/S/pv-target-images/5099b0bb5c1a20bc2f43fe3a4934c94412c842a595deb5220d70a7ee959aae29.jpg" alt="Película destacada 3">
+              <div class="slide-info">
+                  <h3>Top Gun: Maverick</h3>
+                  <p>Espectacular pelicula de accion.</p>
+              </div>
+          </div>
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+      <section class="all-movies">
+        <ul class="movie-list"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 MundoPelis Todos los derechos reservados</p>
+    </footer>
 
     <script src="./scripts/tempData.js"></script>
     <script src="./scripts/index.js"></script>
