@@ -29,4 +29,14 @@ const tempData = [
     poster:
       "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
   },
+  {
+    title: "The Lord of the Rings: The Fellowship of the Ring",
+    year: 2001,
+    director: "Peter Jackson",
+    duration: "2h 58min",
+    genre: ["Action", "Adventure", "Drama", "Fantasy"],
+    rate: 8.8,
+    poster:
+      "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
+  },
 ];
