@@ -192,12 +192,15 @@ h2 {
 
 /* Pie de página */
 .footer {
-  background-color: #333; 
+  background-color: #333;
   color: #ffffff;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 100%;
+  position: relative;
   bottom: 0;
+  left: 0;
+  z-index: 999; /* Asegura que el pie de página esté por encima de otros elementos */
 }
 
 .slider {

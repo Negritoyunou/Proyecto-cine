@@ -5,76 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/categorias.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>Categorías</title>
 </head>
 <body>
 
-    <header class="header">
-        <nav class="navigation">
-          <div class="logo">
-            <a href="index.html"><i class="fas fa-film"></i>MundoPelis</a>
-          </div>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="categorias.html">Categorías</a></li>
-            <li><a href="proximos-estrenos.html">Próximos estrenos</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
+  <header class="header bg-dark py-3">
+    <nav class="navigation container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <a href="index.html" class="text-white text-decoration-none fs-4 fw-bold"><i class="fas fa-film text-white"></i> MundoPelis</a>
+      </div>
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html" class="nav-link text-white">Inicio</a></li>
+        <li class="nav-item"><a href="categorias.html" class="nav-link text-white">Categorías</a></li>
+        <li class="nav-item"><a href="proximos-estrenos.html" class="nav-link text-white">Próximos estrenos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container my-5">
+      <div class="category mb-5">
+        <h3 class="mb-3 text-white">Acción</h3>
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center">
+          <li class="mx-3 mb-4">
+            <img src="https://pics.filmaffinity.com/Sin_novedad_en_el_frente-474477682-large.jpg" alt="Película de acción 1" class="img-fluid w-100">
+            <h4 class="mt-2 text-center text-white">Sin novedad en el frente</h4>
+          </li>
+          <li class="mx-3 mb-4">
+            <img src="https://cartelera.montevideo.com.uy/imagenes_espectaculos/moviedetail13/18509.jpg" alt="Película de acción 2" class="img-fluid w-100">
+            <h4 class="mt-2 text-center text-white">Creed</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="category mb-5">
+        <h3 class="mb-3 text-white">Drama</h3>
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center">
+          <li class="mx-3 mb-4">
+            <img src="https://es.web.img3.acsta.net/medias/nmedia/18/67/06/38/20350558.jpg" alt="Película de drama 1" class="img-fluid w-100">
+            <h4 class="mt-2 text-center text-white">El niño pijama de rayas</h4>
+          </li>
+          <li class="mx-3 mb-4">
+            <img src="https://www.aceprensa.com/wp-content/uploads/2023/07/oppenheimer.jpg" alt="Película de drama 2" class="img-fluid w-100">
+            <h4 class="mt-2 text-center text-white">Oppenheimer</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="category mb-5">
+        <h3 class="mb-3 text-white">Comedia</h3>
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center">
+          <li class="mx-3 mb-4">
+            <img src="https://es.web.img2.acsta.net/pictures/16/05/31/13/33/072749.jpg" alt="Película de comedia 1" class="img-fluid w-100">
+            <h4 class="mt-2 text-center text-white">Un espia y medio</h4>
+          </li>
+          <li class="mx-3 mb-4">
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/d7eb4c08dd806241b67fe5faf230274596d8d3b31400e016c969cae354c89d9d.jpg" alt="Película de comedia 2" class="img-fluid w-100">
+            <h4 class="mt-2 text-center text-white">Mi pobre Angelito</h4>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer bg-dark py-3">
+    <p class="text-center text-white mb-0">&copy; 2024 MundoPelis Todos los derechos reservados</p>
+  </footer>
 
-      <main>
-    <h1>Bienvenidos a categorias</h1>
-    <section class="movie-categories">
-        <h2>Categorías</h2>
-        <div class="category">
-          <h3>Acción</h3>
-          <ul>
-            <li>
-              <img src="https://pics.filmaffinity.com/Sin_novedad_en_el_frente-474477682-large.jpg" alt="Película de acción 1" />
-              <h4>Sin novedad en el frente</h4>
-            </li>
-            <li>
-              <img src="https://cartelera.montevideo.com.uy/imagenes_espectaculos/moviedetail13/18509.jpg" alt="Película de acción 2" />
-              <h4>Creed</h4>
-            </li>
-            <!-- Agregar más películas de acción -->
-          </ul>
-        </div>
-        <div class="category">
-          <h3>Drama</h3>
-          <ul>
-            <li>
-              <img src="https://es.web.img3.acsta.net/medias/nmedia/18/67/06/38/20350558.jpg" alt="Película de drama 1" />
-              <h4>El niño pijama de rayas</h4>
-            </li>
-            <li>
-              <img src="https://www.aceprensa.com/wp-content/uploads/2023/07/oppenheimer.jpg" alt="Película de drama 2" />
-              <h4>Oppenheimer</h4>
-            </li>
-            <!-- Agregar más películas de drama -->
-          </ul>
-        </div>
-        <div class="category">
-          <h3>Comedia</h3>
-          <ul>
-            <li>
-              <img src="https://es.web.img2.acsta.net/pictures/16/05/31/13/33/072749.jpg" alt="Película de comedia 1" />
-              <h4>Un espia y medio</h4>
-            </li>
-            <li>
-              <img src="https://m.media-amazon.com/images/S/pv-target-images/d7eb4c08dd806241b67fe5faf230274596d8d3b31400e016c969cae354c89d9d.jpg" alt="Película de comedia 2" />
-              <h4>Mi pobre Angelito</h4>
-            </li>
-            <!-- Agregar más películas de comedia -->
-          </ul>
-        </div>
-      </section>
-    </main>
-
-      <footer class="footer">
-        <p>&copy; 2024 MundoPelis Todos los derechos reservados</p>
-      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
