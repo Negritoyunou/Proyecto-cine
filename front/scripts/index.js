@@ -34,7 +34,7 @@ initSlider();
 
 //   promise
 //     .then(res => {
-//       showMovies(res.data);
+//       displayMovies(res.data);
 //     })
 //     .catch(err => {
 //       console.error(`El error es el siguiente: ${err}`);
