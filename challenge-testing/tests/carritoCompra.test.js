@@ -22,7 +22,7 @@ describe('CarritoCompra y Producto', () => {
 
         it('agrega productos al carrito', () => {
             const producto1 = new Producto({ nombre: 'Libro 1', precio: 20 });
-            const producto2 = { nombre: 'Libro 2', precio: 30 };
+            const producto2 = new Producto({ nombre: 'Libro 2', precio: 30 });
             
             carrito.agregarProducto(producto1);
             carrito.agregarProducto(producto2);
@@ -30,7 +30,7 @@ describe('CarritoCompra y Producto', () => {
             expect(carrito.productos[0]).toBeInstanceOf(Producto);
             expect(carrito.productos[1]).toBeInstanceOf(Producto);
             expect(carrito.productos[0]).toEqual(producto1);
-            expect(carrito.productos[1]).toEqual(new Producto(producto2));
+            expect(carrito.productos[1]).toEqual(producto2);
             expect(carrito.productos.length).toBe(2);
         });
 

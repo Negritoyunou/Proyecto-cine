@@ -1,7 +1,5 @@
-// movieUtils.js
-
 // Funciones para manejar las tarjetas de películas
-export function createMovieCard(movie) {
+function createMovieCard(movie) {
   const movieCard = document.createElement('li');
   movieCard.className = 'movie-card';
 
@@ -39,19 +37,19 @@ export function createMovieCard(movie) {
   return movieCard;
 }
 
-export function displayMovies(moviesData) {
+function displayMovies(moviesData) {
   const movieList = document.querySelector('.movie-list');
   const movieCards = moviesData.map(createMovieCard);
   movieList.append(...movieCards);
 }
 
-export function handleError(error) {
+function handleError(error) {
   console.error('Error al obtener los datos:', error);
   // Aquí también podrías mostrar un mensaje de error en la interfaz de usuario
 }
 
 // Funciones para el slider
-export function initSlider() {
+function initSlider() {
   const slides = document.querySelectorAll('.slide');
   const prevBtn = document.querySelector('.prev');
   const nextBtn = document.querySelector('.next');
@@ -83,3 +81,10 @@ export function initSlider() {
   // Mostrar la primera diapositiva al cargar la página
   showSlide(currentSlide);
 }
+
+module.exports = {
+  createMovieCard,
+  displayMovies,
+  handleError,
+  initSlider
+};
