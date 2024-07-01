@@ -4,7 +4,7 @@ function createMovieCard(movie) {
   movieCard.className = 'movie-card';
 
   const poster = document.createElement('img');
-  poster.src = movie.poster;
+  poster.src = movie.url;
   poster.alt = movie.title;
   movieCard.appendChild(poster);
 
@@ -24,9 +24,10 @@ function createMovieCard(movie) {
   director.textContent = `Director: ${movie.director}`;
   info.appendChild(director);
 
-  const genres = document.createElement('p');
-  genres.textContent = `Géneros: ${movie.genre.join(', ')}`;
-  info.appendChild(genres);
+  const genre = document.createElement('p');
+  genre.textContent = `Generos: ${movie.genre}`;
+  info.appendChild(genre);
+
 
   const rate = document.createElement('p');
   rate.textContent = `Puntuación: ${movie.rate}`;

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Nueva Película</title>
+    <link rel="stylesheet" href="styles/createMovie.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+          <div class="logo">
+            <a href="index.html" class="Nom-Pagina"><i class="fas fa-film"></i>MundoPelis</a>
+          </div>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="categorias.html">Categorías</a></li>
+            <li><a href="proximos-estrenos.html">Próximos estrenos</a></li>
+            <li><a href="createMovie.html">Agregar pelicula</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container">
+        <form id="movieForm">
+            <h2><i class="fas fa-film"></i> Add Movie</h2>
+            <div class="input-group">
+                <label for="title">Title</label>
+                <input type="text" id="title">
+            </div>
+            <div class="input-group">
+                <label for="director">Director</label>
+                <input type="text" id="director">
+            </div>
+            <div class="input-group">
+                <label for="year">Year</label>
+                <input type="number" id="year">
+            </div>
+            <div class="input-group">
+                <label for="duration">Duration(minutes)</label>
+                <input type="number" id="duration">
+            </div>
+            <div class="input-group">
+                <label for="genre">Genre</label>
+                <input id="genre" >
+            </div>
+            <div class="input-group">
+                <label for="rating">Rate</label>
+                <input type="number" id="rate" step="0.1">
+            </div>
+            <div class="input-group">
+                <label for="poster">URL</label>
+                <input type="url" id="url">
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn-submit"><i class="fas fa-save"></i> Save</button>
+                <button type="button" id="clearBtn" class="btn-clear"><i class="fas fa-eraser"></i> Erase</button>
+            </div>
+        </form>
+    </div>
+    <div id="notification" class="notification">
+        <i class="fas fa-check-circle"></i>
+        <span id="notificationMessage"></span>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 MundoPelis Todos los derechos reservados</p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/createMovie.js"></script>
+</body>
+</html>
